@@ -1,0 +1,806 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>S.M.A.R.T. Instagram Mentoring</title>
+<meta name="description" content="Kostenloser Kennenlern-Call: Wir schauen gemeinsam, ob das S.M.A.R.T. Instagram Mentoring zu deiner aktuellen Situation passt." />
+<meta property="og:title" content="S.M.A.R.T. Instagram Mentoring" />
+<meta property="og:image" content="https://smart-mentoring.vercel.app/images/hanna.jpg" />
+<meta property="og:description" content="Positionierung, Content und Strategie für deinen Instagram-Account. Buche einen kostenlosen Kennenlern-Call." />
+<link rel="stylesheet" href="fonts/fonts.css" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+
+  :root {
+    --creme:      #F2EDE7;
+    --offwhite:   #FAF8F4;
+    --sandbeige:  #DED2C5;
+    --rost:       #A54D2D;
+    --rost-deep:  #8A3F22;
+    --terrakotta: #7C3926;
+    --olive:      #747B5A;
+    --olive-deep: #5C6248;
+    --salbei:     #D6D9C8;
+    --ink:        #24211F;
+    --ink-soft:   #5A5648;
+    --muted:      #8C8776;
+    --line:       rgba(36,33,31,0.14);
+
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans:  'Montserrat', system-ui, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--creme);
+    color: var(--ink-soft);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  img { max-width: 100%; display: block; }
+  .wrap { padding-inline: 24px; }
+  @media (min-width: 900px) { .wrap { padding-inline: 64px; } }
+  section { padding-block: clamp(72px, 11vw, 128px); max-width: 1120px; margin: 0 auto; }
+  section.full { max-width: 100%; padding-block: 0; }
+  .inner { max-width: 1120px; margin: 0 auto; padding: clamp(72px, 11vw, 128px) 24px; }
+  @media (min-width: 900px) { .inner { padding-inline: 64px; } }
+
+  h1, h2, h3 { font-family: var(--serif); color: var(--ink); text-wrap: balance; margin: 0; font-weight: 500; }
+  em { font-style: italic; color: var(--rost); font-weight: 400; }
+
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rost);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+  .eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--rost); }
+  .eyebrow.center { justify-content: center; }
+  .eyebrow.on-dark { color: var(--salbei); }
+  .eyebrow.on-dark::before { background: var(--salbei); }
+
+  h2.title { font-size: clamp(30px, 4vw, 46px); line-height: 1.18; margin-bottom: 22px; max-width: 760px; }
+  .lede { font-size: 17px; color: var(--ink-soft); max-width: 600px; }
+  .fineprint { font-size: 13px; color: var(--muted); max-width: 520px; line-height: 1.6; }
+
+  .pill {
+    display: inline-block;
+    padding: 16px 38px;
+    background: var(--rost);
+    color: var(--offwhite);
+    font-family: var(--sans);
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.2s ease;
+  }
+  .pill:hover { background: var(--rost-deep); transform: translateY(-1px); }
+
+  .center { text-align: center; }
+  .mx-auto { margin-left: auto; margin-right: auto; }
+
+  /* NAV */
+  nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 24px 24px 0;
+  }
+  @media (min-width: 900px) { nav { padding: 28px 64px 0; } }
+  .logo { font-family: var(--serif); font-size: 19px; font-weight: 600; color: var(--ink); }
+  .logo em { font-style: normal; color: var(--ink); }
+  .toplink {
+    font-family: var(--sans); font-size: 11px; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft);
+    text-decoration: none; border: none; background: none; cursor: pointer;
+    border-bottom: 1px solid var(--muted); padding-bottom: 3px;
+    transition: color 0.25s ease, border-color 0.25s ease;
+  }
+  .toplink:hover { color: var(--rost); border-color: var(--rost); }
+
+  /* STICKY CTA — mobile only */
+  .sticky-cta {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+    background: rgba(36,33,31,0.97);
+    backdrop-filter: blur(6px);
+    padding: 14px 20px calc(14px + env(safe-area-inset-bottom, 0px));
+    display: flex; align-items: center; justify-content: center;
+  }
+  .sticky-cta .pill { width: 100%; max-width: 420px; text-align: center; padding: 15px; }
+  body { padding-bottom: 78px; }
+  @media (min-width: 880px) {
+    .sticky-cta { display: none; }
+    body { padding-bottom: 0; }
+  }
+
+  /* HERO — text + photo */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 880px) { .hero { grid-template-columns: 1.3fr 1fr; align-items: center; } }
+  .hero-text {
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 56px 24px 36px;
+  }
+  @media (min-width: 900px) { .hero-text { padding: 80px 64px; } }
+  .hero-text h1 { font-size: clamp(40px, 5.6vw, 62px); line-height: 1.06; margin-bottom: 22px; }
+  .hero-tagline { font-family: var(--serif); font-style: italic; font-size: clamp(19px, 2vw, 23px); color: var(--terrakotta); margin-bottom: 22px; line-height: 1.4; }
+  .hero-text p.hero-desc { font-size: 16px; color: var(--ink-soft); max-width: 480px; margin-bottom: 16px; }
+  .hero-text p.hero-sub { font-size: 15px; color: var(--muted); max-width: 460px; margin-bottom: 30px; }
+  .hero-meta {
+    margin-top: 26px; font-size: 12.5px; letter-spacing: 0.02em; color: var(--muted);
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+  }
+  .hero-meta .dot { color: var(--sandbeige); }
+  .hero-photo { display: flex; align-items: center; justify-content: center; padding: 8px 24px 48px; }
+  @media (min-width: 880px) { .hero-photo { padding: 40px 48px; } }
+  .hero-photo-frame {
+    width: 100%; max-width: 320px; aspect-ratio: 4 / 5;
+    border-radius: 14px; overflow: hidden;
+    box-shadow: 0 24px 44px -24px rgba(36,33,31,0.4);
+    animation: curtain 1.6s cubic-bezier(0.2,0.75,0.2,1) 0.1s both;
+  }
+  .hero-photo-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
+  .hero-photo-frame img.plx { transform: scale(1.14); will-change: transform; }
+  @keyframes curtain { from { clip-path: inset(0 0 0 100%); } to { clip-path: inset(0 0 0 0); } }
+
+  /* PROBLEM SECTION */
+  .quote-stack { margin: 44px 0 40px; }
+  .quote-line {
+    font-family: var(--serif); font-style: italic; color: var(--ink);
+    font-size: clamp(20px, 2.6vw, 27px); text-align: center;
+    max-width: 680px; margin: 0 auto; padding: 20px 0;
+    border-top: 1px solid var(--line);
+    transition: color 0.3s ease;
+  }
+  .quote-stack .quote-line:last-child { border-bottom: 1px solid var(--line); }
+  @media (hover: hover) { .quote-line:hover { color: var(--rost); } }
+  .problem-close { max-width: 680px; text-align: center; margin: 0 auto; font-size: 17px; line-height: 1.8; }
+  .sw { color: var(--sandbeige); transition: color 0.15s ease; }
+  .sw.lit { color: var(--ink); }
+
+  /* GRUNDIDEE — the one deliberate dark contrast section */
+  .grundidee-bg { background: var(--ink); }
+  .grundidee-grid { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; }
+  @media (min-width: 900px) { .grundidee-grid { grid-template-columns: 1fr 0.85fr; gap: 64px; } }
+  .grundidee-inner { max-width: 620px; }
+  @media (min-width: 900px) { .grundidee-inner { max-width: none; } }
+  .grundidee-inner h2 { color: var(--offwhite); margin-bottom: 28px; }
+  .grundidee-inner p { color: #EADFD4; font-size: 16.5px; margin-bottom: 18px; }
+  .grundidee-pull {
+    font-family: var(--serif); font-style: italic; font-size: clamp(22px,2.8vw,30px);
+    color: var(--salbei); margin-top: 34px; transition: color 0.35s ease; cursor: default;
+  }
+  @media (hover: hover) { .grundidee-pull:hover { color: #E8894E; } }
+  .grundidee-photo { display: flex; align-items: center; justify-content: center; }
+  .grundidee-photo-frame {
+    width: 100%; max-width: 380px; aspect-ratio: 4 / 5;
+    border-radius: 10px; overflow: hidden;
+    box-shadow: 0 30px 50px -24px rgba(0,0,0,0.55);
+  }
+  .grundidee-photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+
+  /* METHOD / FLOWER */
+  .method-grid { display: grid; grid-template-columns: 1fr; gap: 52px; align-items: center; }
+  @media (min-width: 980px) { .method-grid { grid-template-columns: 1fr 1fr; } }
+  .flower-svg { width: 100%; height: auto; max-width: 460px; margin: 0 auto; display: block; overflow: visible; }
+  .flower-svg .petal-move {
+    transform-box: fill-box; transform-origin: center;
+    transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
+  }
+  html.js-reveal .flower-svg .petal-move { opacity: 0; transform: translate(var(--tx, 0), var(--ty, 0)) scale(0.86); }
+  html.js-reveal .flower-svg.visible .petal-move { opacity: 1; transform: none; }
+  .flower-svg .petal { transform-box: fill-box; transform-origin: center; transition: transform 0.35s cubic-bezier(0.16,1,0.3,1); cursor: default; }
+  @media (hover: hover) { .flower-svg .petal:hover { transform: scale(1.06); } }
+  .flower-svg .petal-circle { transform-box: fill-box; transform-origin: center; transition: filter 0.35s ease; }
+  @media (hover: hover) { .flower-svg .petal:hover .petal-circle { filter: brightness(1.1); } }
+  .smart-list { display: flex; flex-direction: column; }
+  .smart-row { display: grid; grid-template-columns: 34px 1fr; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+  .smart-row:first-child { padding-top: 0; }
+  .smart-row:last-child { border-bottom: none; }
+  .smart-row .idx { font-family: var(--serif); font-size: 15px; color: var(--rost); font-weight: 600; }
+  .smart-row h4 { font-size: 18px; font-weight: 600; color: var(--ink); margin: 0 0 4px; font-family: var(--sans); }
+  .smart-row p { font-size: 15px; color: var(--muted); margin: 0; }
+
+  /* RESULTS — five plain numbered lines */
+  .result-list { margin-top: 40px; max-width: 700px; }
+  .result-row {
+    display: grid; grid-template-columns: 40px 1fr; gap: 20px; align-items: baseline;
+    padding: 16px 0; border-bottom: 1px solid var(--line);
+  }
+  .result-row:last-child { border-bottom: none; }
+  .result-row .idx { font-family: var(--serif); font-size: 16px; color: var(--rost); font-weight: 600; }
+  .result-row p { font-size: 16.5px; color: var(--ink); margin: 0; }
+
+  /* PROCESS TIMELINE */
+  .timeline { position: relative; margin-top: 48px; }
+  .timeline-item { display: flex; gap: 22px; position: relative; padding-bottom: 44px; }
+  .timeline-item:last-child { padding-bottom: 0; }
+  .timeline-marker {
+    flex: 0 0 auto; width: 36px; height: 36px; border-radius: 50%;
+    background: var(--rost); color: var(--offwhite);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif); font-weight: 600; font-size: 15px;
+    position: relative; z-index: 1;
+  }
+  .timeline-item.free .timeline-marker { background: var(--olive); }
+  .timeline-item:not(:last-child)::before {
+    content: ''; position: absolute; left: 17px; top: 36px; bottom: -44px; width: 2px;
+    background: var(--line);
+  }
+  .timeline-content { flex: 1; padding-top: 3px; }
+  .timeline-content .tag { font-size: 11.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--olive); margin-bottom: 4px; display: block; }
+  .timeline-item.free .timeline-content .tag { color: var(--rost); }
+  .timeline-content h4 { font-size: 19px; color: var(--ink); margin-bottom: 8px; font-weight: 600; font-family: var(--sans); }
+  .timeline-content p.desc { font-size: 15.5px; color: var(--ink-soft); margin: 0; max-width: 600px; }
+
+  .bonus-line {
+    margin-top: 40px; max-width: 620px;
+    border-left: 2px solid var(--rost);
+    padding: 4px 0 4px 22px;
+  }
+  .bonus-line .bonus-label { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rost); display: block; margin-bottom: 6px; }
+  .bonus-line p { font-size: 14.5px; color: var(--ink-soft); margin: 0; }
+
+  /* TESTIMONIAL */
+  .testi-card {
+    background: var(--offwhite);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 48px 32px;
+    max-width: 920px;
+    margin: 40px auto 0;
+  }
+  @media (min-width: 900px) { .testi-card { padding: 56px 64px; } }
+  .testi-stat { text-align: center; margin-bottom: 40px; }
+  .testi-stat .numbers { font-family: var(--serif); font-size: clamp(34px,5vw,54px); color: var(--ink); display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  .testi-stat .numbers .arrow { color: var(--rost); }
+  .testi-stat .caption { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-top: 10px; }
+  .testi-images { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 500px; margin: 0 auto 36px; }
+  .testi-shot { display: flex; flex-direction: column; gap: 10px; transition: transform 0.3s ease; }
+  @media (hover: hover) { .testi-shot:hover { transform: translateY(-3px); } }
+  .testi-shot .frame { border-radius: 4px; overflow: hidden; border: 1px solid var(--line); }
+  .testi-shot img { width: 100%; display: block; }
+  .testi-shot .tag { align-self: center; background: var(--ink); color: var(--offwhite); font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; }
+  .testi-quote { font-family: var(--serif); font-style: italic; font-size: clamp(19px,2.2vw,23px); color: var(--ink); text-align: center; max-width: 620px; margin: 0 auto 20px; line-height: 1.5; }
+  .testi-credit { text-align: center; font-size: 13.5px; color: var(--muted); margin-bottom: 18px; }
+  .testi-credit strong { color: var(--ink); font-weight: 600; }
+  .testi-disclaimer { text-align: center; font-size: 12px; color: var(--muted); max-width: 480px; margin: 0 auto; line-height: 1.6; }
+
+  /* FINAL CTA — light, no second dark section */
+  .final-bg { background: var(--sandbeige); text-align: center; }
+  .final-inner { max-width: 600px; margin: 0 auto; }
+  .final-inner h2 { color: var(--ink); margin-bottom: 18px; }
+  .final-inner p.lead { color: var(--ink-soft); font-size: 16.5px; max-width: 500px; margin: 0 auto 28px; }
+  .final-inner .fineprint { color: var(--ink-soft); margin: 20px auto 0; text-align: center; }
+
+  footer {
+    background: var(--ink);
+    border-top: 1px solid rgba(250,248,244,0.12);
+    padding: 44px 24px;
+    display: flex; flex-direction: column; gap: 20px; align-items: center; text-align: center;
+  }
+  @media (min-width: 720px) { footer { flex-direction: row; justify-content: space-between; text-align: left; padding: 44px 64px; } }
+  .footer-logo { font-family: var(--serif); font-size: 17px; color: var(--offwhite); }
+  .footer-links { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+  footer a { color: var(--muted); text-decoration: none; font-size: 13px; }
+  footer a:hover { color: var(--rost); }
+
+  /* BOOKING MODAL */
+  .booking-modal {
+    display: none;
+    position: fixed; inset: 0; z-index: 200;
+    background: rgba(22,16,12,0.6);
+    padding: 24px;
+    align-items: center; justify-content: center;
+  }
+  .booking-modal.open { display: flex; }
+  .booking-modal-box {
+    background: var(--offwhite);
+    border-radius: 8px;
+    width: 100%; max-width: 760px;
+    max-height: 88vh;
+    display: flex; flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.4);
+  }
+  .booking-modal-head {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 22px; border-bottom: 1px solid var(--line);
+  }
+  .booking-modal-head span { font-family: var(--serif); font-size: 17px; color: var(--ink); }
+  .booking-modal-close {
+    background: none; border: none; cursor: pointer;
+    font-size: 22px; line-height: 1; color: var(--muted); padding: 4px 8px;
+  }
+  .booking-modal-close:hover { color: var(--rost); }
+  .booking-modal-body { flex: 1; overflow: auto; position: relative; min-height: 420px; }
+  .booking-modal-body iframe { width: 100%; height: 100%; min-height: 420px; border: none; display: block; }
+  .booking-fallback { padding: 40px 32px; text-align: center; }
+  .booking-fallback p { color: var(--ink-soft); font-size: 15px; margin-bottom: 20px; line-height: 1.7; }
+
+  /* SCROLL REVEAL — sanftes Fade-in + leichte Bewegung, kein Dauerloop */
+  .reveal, .lede, .fineprint {
+    transition: opacity 0.9s ease, transform 1s cubic-bezier(0.2,0.75,0.2,1);
+  }
+  html.js-reveal .reveal, html.js-reveal .lede, html.js-reveal .fineprint {
+    opacity: 0; transform: translateY(20px);
+  }
+  html.js-reveal .reveal.visible, html.js-reveal .lede.visible, html.js-reveal .fineprint.visible {
+    opacity: 1; transform: none;
+  }
+
+  /* card stagger: --d is computed per element by JS (sibling index * 0.09s) */
+  html.js-reveal .smart-row, html.js-reveal .timeline-item, html.js-reveal .result-row {
+    opacity: 0; transform: translateY(18px);
+    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2,0.75,0.2,1);
+    transition-delay: var(--d, 0s);
+  }
+  html.js-reveal #methode.visible .smart-row,
+  html.js-reveal #process.visible .timeline-item,
+  html.js-reveal #ergebnisse.visible .result-row {
+    opacity: 1; transform: none;
+  }
+
+  html.js-reveal .quote-line {
+    opacity: 0; transform: translateX(-26px);
+    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2,0.75,0.2,1);
+    transition-delay: var(--d, 0s);
+  }
+  html.js-reveal #problem.visible .quote-line { opacity: 1; transform: none; }
+
+  .reveal-text, h2, .grundidee-pull, .testi-quote {
+    transition: opacity 0.9s ease, transform 1s cubic-bezier(0.2,0.75,0.2,1);
+  }
+  html.js-reveal .reveal-text, html.js-reveal h2, html.js-reveal .grundidee-pull, html.js-reveal .testi-quote {
+    opacity: 0; transform: translateX(-26px);
+  }
+  h2 { cursor: default; transition: color 0.35s ease; }
+  @media (hover: hover) { h2:hover { color: var(--rost); } }
+  .testi-quote { cursor: default; transition: opacity 0.9s ease, transform 1s cubic-bezier(0.2,0.75,0.2,1), color 0.35s ease; }
+  @media (hover: hover) { .testi-quote:hover { color: var(--rost); } }
+
+  html.js-reveal .reveal-text.visible, html.js-reveal h2.visible, html.js-reveal .grundidee-pull.visible, html.js-reveal .testi-quote.visible {
+    opacity: 1; transform: none;
+  }
+
+  @media (hover: hover) {
+    .smart-row:hover .idx { color: var(--terrakotta); }
+    .smart-row:hover h4 { color: var(--rost); }
+  }
+  .smart-row h4, .smart-row .idx { transition: color 0.25s ease; }
+
+  /* one quiet, bounded pulse on the final CTA only — not a permanent loop */
+  .final-bg .pill { animation: cta-pulse-once 1.8s ease-out 1; }
+  @keyframes cta-pulse-once {
+    0% { box-shadow: 0 0 0 0 rgba(165,77,45,0.35); }
+    100% { box-shadow: 0 0 0 14px rgba(165,77,45,0); }
+  }
+
+  .numbers .count { font-variant-numeric: tabular-nums; }
+
+  /* guaranteed entrance motion on load, no JS/scroll dependency */
+  @keyframes fade-up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+  .hero-text > * { opacity: 0; animation: fade-up 0.8s cubic-bezier(0.16,1,0.3,1) forwards; }
+  .hero-text .eyebrow  { animation-delay: 0.05s; }
+  .hero-text h1         { animation-delay: 0s; opacity: 1; animation: none; }
+  .hero-text h1 .word {
+    display: inline-block; opacity: 0;
+    animation: fade-up 0.6s cubic-bezier(0.16,1,0.3,1) forwards;
+    animation-delay: calc(0.15s + var(--i) * 0.12s);
+  }
+  .hero-tagline          { animation-delay: 0.6s; }
+  .hero-text p.hero-desc { animation-delay: 0.7s; }
+  .hero-text p.hero-sub  { animation-delay: 0.78s; }
+  .hero-text .pill       { animation-delay: 0.88s; }
+  .hero-meta             { animation-delay: 0.98s; }
+
+  /* reduced motion: keep content visible, drop the animation itself */
+  @media (prefers-reduced-motion: reduce) {
+    html.js-reveal .reveal, html.js-reveal .lede, html.js-reveal .fineprint,
+    html.js-reveal .smart-row, html.js-reveal .timeline-item, html.js-reveal .result-row,
+    html.js-reveal .quote-line, html.js-reveal .reveal-text, html.js-reveal h2,
+    html.js-reveal .grundidee-pull, html.js-reveal .testi-quote,
+    html.js-reveal .flower-svg .petal-move, .hero-text > *, .hero-text h1 .word {
+      transition: none !important; animation: none !important; opacity: 1 !important; transform: none !important;
+    }
+    .final-bg .pill { animation: none; }
+  }
+</style>
+
+<nav>
+  <div class="logo">business.einfach<em>.smart</em></div>
+  <button class="toplink" data-cta="call">Kennenlern-Call buchen</button>
+</nav>
+
+<div class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">1:1 Instagram Mentoring</p>
+    <h1><span class="word" style="--i:0">S.M.A.R.T.</span><br /><span class="word" style="--i:1">Instagram</span> <span class="word" style="--i:2"><em>Mentoring</em></span></h1>
+    <p class="hero-tagline">Deine Strategie. Dein Content. Zwei Wochen gemeinsam umgesetzt.</p>
+    <p class="hero-desc">Du hast Wissen, Erfahrung oder bereits ein Angebot, aber auf Instagram fehlt dir die klare Richtung? Im S.M.A.R.T. Mentoring schauen wir gemeinsam auf deine Positionierung, deinen Account und deinen Content und entwickeln daraus eine Strategie, die zu dir und deinem Business passt.</p>
+    <p class="hero-sub">Im kostenlosen Kennenlern-Call schauen wir zuerst, wo du gerade stehst und ob die 14 Tage für dich sinnvoll sind.</p>
+    <button class="pill" data-cta="call">Kennenlern-Call buchen</button>
+    <div class="hero-meta">
+      <span>Account- &amp; Insights-Analyse</span>
+      <span class="dot">·</span>
+      <span>Persönlicher Strategie-Call</span>
+      <span class="dot">·</span>
+      <span>14 Tage 1:1 Begleitung</span>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <div class="hero-photo-frame">
+      <img class="plx" src="images/hanna.jpg" alt="Hanna, business.einfach.smart" />
+    </div>
+  </div>
+</div>
+
+<section class="wrap reveal" id="problem">
+  <p class="eyebrow">Vielleicht kommt dir das bekannt vor</p>
+  <h2 class="title">Du postest.<br /><em>Aber irgendwie fehlt die Richtung.</em></h2>
+  <div class="quote-stack">
+    <p class="quote-line">„Ich poste, aber es tut sich einfach nichts.“</p>
+    <p class="quote-line">„Ich weiß nicht genau, wofür mein Account stehen soll.“</p>
+    <p class="quote-line">„Meine Bio und mein Content passen irgendwie nicht zusammen.“</p>
+    <p class="quote-line">„Ich weiß nicht, welche Themen und Formate ich wirklich weiterverfolgen soll.“</p>
+  </div>
+  <p class="problem-close sw-target"><span class="sw">Du</span> <span class="sw">brauchst</span> <span class="sw">nicht</span> <span class="sw">noch</span> <span class="sw">mehr</span> <span class="sw">einzelne</span> <span class="sw">Instagram-Tipps.</span> <span class="sw">Du</span> <span class="sw">brauchst</span> <span class="sw">Klarheit</span> <span class="sw">darüber,</span> <span class="sw">was</span> <span class="sw">für</span> <span class="sw">deinen</span> <span class="sw">Account</span> <span class="sw">zusammengehört.</span></p>
+</section>
+
+<div class="full grundidee-bg reveal">
+  <div class="inner">
+    <div class="grundidee-grid">
+      <div class="grundidee-inner">
+        <p class="eyebrow on-dark">Meine Haltung</p>
+        <h2>Du brauchst nicht einfach mehr Content.</h2>
+        <p class="reveal">Ein Reel kann Reichweite bekommen und dir trotzdem kaum passende Follower bringen. Eine gute Bio hilft dir wiederum wenig, wenn dein Content niemanden interessiert.</p>
+        <p class="reveal">Deshalb schauen wir im S.M.A.R.T. Mentoring auf das Zusammenspiel: Positionierung. Profil. Themen. Content.</p>
+        <p class="grundidee-pull">Nicht einfach mehr posten. Herausfinden, was für deinen Account wirklich funktioniert.</p>
+      </div>
+      <div class="grundidee-photo reveal">
+        <div class="grundidee-photo-frame">
+          <img src="images/hanna-analyse.jpg" alt="Genau hinschauen: Positionierung und Content im Detail analysieren" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="wrap reveal" id="methode">
+  <p class="eyebrow">Die S.M.A.R.T. Methode</p>
+  <h2 class="title">Fünf Bereiche. Eine Strategie für deinen Account.</h2>
+  <div class="method-grid">
+    <svg class="flower-svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="240" cy="240" r="205" fill="none" stroke="#A54D2D" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="1 9" stroke-linecap="round" />
+      <g class="petal-move" style="--tx:0px; --ty:-150px;">
+        <g class="petal">
+          <circle class="petal-circle" cx="240" cy="160" r="105" fill="#A54D2D" fill-opacity="0.5" />
+          <text x="240" y="165" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="700" font-size="22" fill="#24211F">S</text>
+        </g>
+      </g>
+      <g class="petal-move" style="--tx:140px; --ty:-46px;">
+        <g class="petal">
+          <circle class="petal-circle" cx="316" cy="215" r="105" fill="#7C3926" fill-opacity="0.42" />
+          <text x="316" y="220" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="700" font-size="22" fill="#24211F">M</text>
+        </g>
+      </g>
+      <g class="petal-move" style="--tx:86px; --ty:120px;">
+        <g class="petal">
+          <circle class="petal-circle" cx="287" cy="305" r="105" fill="#747B5A" fill-opacity="0.4" />
+          <text x="287" y="310" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="700" font-size="22" fill="#24211F">A</text>
+        </g>
+      </g>
+      <g class="petal-move" style="--tx:-86px; --ty:120px;">
+        <g class="petal">
+          <circle class="petal-circle" cx="193" cy="305" r="105" fill="#D6D9C8" fill-opacity="0.75" />
+          <text x="193" y="310" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="700" font-size="22" fill="#24211F">R</text>
+        </g>
+      </g>
+      <g class="petal-move" style="--tx:-140px; --ty:-46px;">
+        <g class="petal">
+          <circle class="petal-circle" cx="164" cy="215" r="105" fill="#DED2C5" fill-opacity="0.75" />
+          <text x="164" y="220" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="700" font-size="22" fill="#24211F">T</text>
+        </g>
+      </g>
+      <g class="core">
+        <circle cx="240" cy="240" r="48" fill="#24211F" />
+        <text x="240" y="234" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="17" fill="#FAF8F4">DU</text>
+        <text x="240" y="253" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-size="14" fill="#D6D9C8">sichtbar</text>
+      </g>
+      <text x="240" y="30" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="12.5" letter-spacing="0.06em" fill="#5A5648">STANDORTANALYSE</text>
+      <text x="470" y="175" text-anchor="end" font-family="Montserrat, sans-serif" font-size="12.5" letter-spacing="0.06em" fill="#5A5648">MARKENPOSITIONIERUNG</text>
+      <text x="400" y="400" text-anchor="end" font-family="Montserrat, sans-serif" font-size="12.5" letter-spacing="0.06em" fill="#5A5648">AUSRICHTUNG</text>
+      <text x="80" y="400" text-anchor="start" font-family="Montserrat, sans-serif" font-size="12.5" letter-spacing="0.06em" fill="#5A5648">REICHWEITEN-SETUP</text>
+      <text x="10" y="175" text-anchor="start" font-family="Montserrat, sans-serif" font-size="12.5" letter-spacing="0.06em" fill="#5A5648">TRANSFER</text>
+    </svg>
+    <div class="smart-list">
+      <div class="smart-row"><span class="idx">01</span><div><h4>Standortanalyse</h4><p>Wo stehst du gerade? Wir schauen uns deinen Account und deine Insights genau an.</p></div></div>
+      <div class="smart-row"><span class="idx">02</span><div><h4>Markenpositionierung</h4><p>Wir arbeiten heraus, wofür du mit deinem Account stehen willst und für welches Problem du bekannt werden möchtest.</p></div></div>
+      <div class="smart-row"><span class="idx">03</span><div><h4>Ausrichtung</h4><p>Wir sortieren deine Themen und Content-Säulen, damit du nicht mehr wahllos postest.</p></div></div>
+      <div class="smart-row"><span class="idx">04</span><div><h4>Reichweiten-Setup</h4><p>Wir analysieren, welche Themen und Formate bei dir Potenzial haben und was du gezielt testen solltest.</p></div></div>
+      <div class="smart-row"><span class="idx">05</span><div><h4>Transfer</h4><p>Raus aus der Theorie. Du setzt die Strategie 14 Tage lang mit persönlichem Feedback um.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap reveal" id="ergebnisse">
+  <h2 class="title center mx-auto">Was du nach den 14 Tagen mitnimmst</h2>
+  <p class="lede center mx-auto">Keine Reichweiten- oder Follower-Garantie. Dafür eine klare Grundlage, mit der du weiterarbeiten kannst.</p>
+  <div class="result-list mx-auto">
+    <div class="result-row"><span class="idx">01</span><p>Eine klare Positionierung</p></div>
+    <div class="result-row"><span class="idx">02</span><p>Eine Bio, die verständlich macht, wofür dein Account steht</p></div>
+    <div class="result-row"><span class="idx">03</span><p>Klare Themen und Content-Säulen</p></div>
+    <div class="result-row"><span class="idx">04</span><p>Formate und Content-Ideen, die du gezielt testen kannst</p></div>
+    <div class="result-row"><span class="idx">05</span><p>Einen konkreten Plan für deine nächsten Schritte</p></div>
+  </div>
+</section>
+
+<section class="wrap reveal" id="process">
+  <p class="eyebrow">So geht's los</p>
+  <h2 class="title">So läuft die Zusammenarbeit ab</h2>
+  <div class="timeline">
+    <div class="timeline-item free">
+      <div class="timeline-marker">1</div>
+      <div class="timeline-content">
+        <span class="tag">30 Min. · kostenlos</span>
+        <h4>Kennenlern-Call</h4>
+        <p class="desc">Wir sprechen darüber, wo du gerade mit deinem Account stehst, was aktuell nicht funktioniert und was du verändern möchtest. Danach schauen wir, ob das S.M.A.R.T. Mentoring für deine Situation sinnvoll ist.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker">2</div>
+      <div class="timeline-content">
+        <span class="tag">Danach</span>
+        <h4>Account- und Insights-Analyse</h4>
+        <p class="desc">Wenn wir uns für die Zusammenarbeit entscheiden, analysiere ich deinen Account und deine Insights ausführlich.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker">3</div>
+      <div class="timeline-content">
+        <span class="tag">Danach</span>
+        <h4>Persönlicher Strategie-Call</h4>
+        <p class="desc">60 Minuten nur für dich und deinen Account. Wir gehen die Analyse gemeinsam durch und legen Positionierung, Bio, Themen, Formate und nächste Schritte fest.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker">4</div>
+      <div class="timeline-content">
+        <span class="tag">Danach</span>
+        <h4>14 Tage gemeinsame Umsetzung</h4>
+        <p class="desc">Du setzt die Strategie um, erstellst Content und kannst mir während dieser Zeit deine Fragen und Inhalte schicken. Du bekommst persönliches Feedback, statt allein überlegen zu müssen, ob du gerade in die richtige Richtung gehst.</p>
+      </div>
+    </div>
+  </div>
+  <div class="bonus-line reveal">
+    <span class="bonus-label">Bonus</span>
+    <p>Während deiner 14 Tage kannst du zusätzlich an meinem wöchentlichen Business-Club-Call teilnehmen.</p>
+  </div>
+</section>
+
+<section class="wrap reveal">
+  <p class="eyebrow center mx-auto" style="justify-content:center;">Was sich verändern kann, wenn die Richtung stimmt</p>
+  <h2 class="title center mx-auto">Was bei Kristin passiert ist</h2>
+  <div class="testi-card">
+    <div class="testi-stat">
+      <div class="numbers"><span class="count" data-target="367">367</span><span class="arrow">→</span><span class="count" data-target="7314">7.314</span></div>
+      <p class="caption">Follower in 8 Wochen</p>
+    </div>
+    <div class="testi-images">
+      <div class="testi-shot"><span class="tag">Vorher</span><div class="frame"><img src="images/kristin-vorher.jpg" alt="Kristins Profil vor der Positionierung" loading="lazy" /></div></div>
+      <div class="testi-shot"><span class="tag">Nachher</span><div class="frame"><img src="images/kristin-nachher.jpg" alt="Kristins Profil nach der Positionierung" loading="lazy" /></div></div>
+    </div>
+    <p class="testi-quote">Bei Kristin haben wir zuerst ihre Positionierung geschärft und anschließend ihre Content-Strategie darauf ausgerichtet. Dadurch wurde deutlich klarer, wofür ihr Account steht und welche Inhalte zu ihrer Zielgruppe passen.</p>
+    <p class="testi-credit"><strong>Kristin Schnödt</strong> · @kristin.schnoedt · Slow-Aging &amp; Hautgesundheit</p>
+    <p class="testi-disclaimer">Individuelles Kundenergebnis. Ergebnisse können je nach Account, Thema, Ausgangslage und Umsetzung unterschiedlich ausfallen.</p>
+  </div>
+</section>
+
+<div class="full final-bg reveal">
+  <div class="inner">
+    <div class="final-inner">
+      <h2>Lass uns schauen, wo es bei dir gerade hängt.</h2>
+      <p class="lead">Im kostenlosen Kennenlern-Call schauen wir uns an, wo du mit deinem Instagram-Account gerade stehst und ob das S.M.A.R.T. Mentoring die richtige Unterstützung für dich ist. Der Call ist kein kostenloser Strategie- oder Beratungscall. Er dient dazu, deine aktuelle Situation kennenzulernen und herauszufinden, ob eine Zusammenarbeit sinnvoll ist.</p>
+      <button class="pill" data-cta="call">Kennenlern-Call buchen</button>
+      <p class="fineprint">30 Minuten · kostenlos · online über Google Meet</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">business.einfach<em>.smart</em></div>
+  <div class="footer-links">
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="https://instagram.com/business.einfach.smart" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <button class="pill" data-cta="call">Kennenlern-Call buchen</button>
+</div>
+
+<div class="booking-modal" id="bookingModal" aria-hidden="true">
+  <div class="booking-modal-box" role="dialog" aria-modal="true" aria-label="Kennenlern-Call buchen">
+    <div class="booking-modal-head">
+      <span>Kennenlern-Call buchen</span>
+      <button class="booking-modal-close" id="bookingModalClose" aria-label="Schließen">&times;</button>
+    </div>
+    <div class="booking-modal-body" id="bookingModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  /* ───────────────────────────────────────────────────────────────
+     GOOGLE-KALENDER-BUCHUNG: zentral an EINER Stelle gepflegt.
+     Alle CTA-Buttons auf der Seite (Nav, Hero, Sticky, Final) nutzen
+     automatisch denselben Link, ohne weitere Codeänderung.
+  ─────────────────────────────────────────────────────────────── */
+  var BOOKING_URL = 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0bvtYnH5KmCmxEnsrkb9SdN5dsnBqBtigjDFh7UMZ-pvRm7boQ3JJ5u0uhzii9M0X2Y75tCtnF';
+
+  var modal = document.getElementById('bookingModal');
+  var modalBody = document.getElementById('bookingModalBody');
+  var modalClose = document.getElementById('bookingModalClose');
+  var modalBuilt = false;
+
+  function buildModalBody() {
+    if (modalBuilt) return;
+    modalBuilt = true;
+    if (BOOKING_URL) {
+      var iframe = document.createElement('iframe');
+      // Google verlangt fuer eingebettete Terminseiten den Parameter gv=true
+      iframe.src = BOOKING_URL + (BOOKING_URL.indexOf('?') === -1 ? '?gv=true' : '&gv=true');
+      iframe.title = 'Terminbuchung';
+      modalBody.appendChild(iframe);
+      var fallbackLink = document.createElement('div');
+      fallbackLink.style.textAlign = 'center';
+      fallbackLink.style.padding = '10px';
+      fallbackLink.style.fontSize = '12px';
+      var a = document.createElement('a');
+      a.href = BOOKING_URL;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = 'Öffnet sich die Buchung nicht? Hier in neuem Tab öffnen.';
+      a.style.color = 'inherit';
+      fallbackLink.appendChild(a);
+      modalBody.appendChild(fallbackLink);
+    } else {
+      var box = document.createElement('div');
+      box.className = 'booking-fallback';
+      box.innerHTML = '<p>Der Buchungslink wird gerade eingerichtet. Schreib mir in der Zwischenzeit gern direkt, dann finden wir gemeinsam einen Termin.</p>';
+      modalBody.appendChild(box);
+    }
+  }
+
+  function openModal() {
+    buildModalBody();
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('[data-cta="call"]').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      openModal();
+    });
+  });
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+
+  /* ─────────────────────────────────────────────────────────────── */
+
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  document.documentElement.classList.add('js-reveal');
+
+  /* card stagger: give each element in a sibling group a --d delay based on its index */
+  var groups = ['.smart-row', '.timeline-item', '.result-row', '.quote-line'];
+  groups.forEach(function (sel) {
+    document.querySelectorAll(sel).forEach(function (el) {
+      var sibs = Array.prototype.filter.call(el.parentElement.children, function (c) { return c.matches(sel); });
+      el.style.setProperty('--d', (sibs.indexOf(el) * 0.09).toFixed(2) + 's');
+    });
+  });
+
+  /* scroll-driven reveal: plain scroll + getBoundingClientRect (no IntersectionObserver) */
+  var revealSelector = '.reveal, .reveal-text, h2, .grundidee-pull, .testi-quote, .flower-svg, .lede, .fineprint';
+  var revealEls = Array.prototype.slice.call(document.querySelectorAll(revealSelector));
+  var countEls = Array.prototype.slice.call(document.querySelectorAll('.count[data-target]'));
+
+  function runCount(el) {
+    var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+    if (reduceMotion) { el.textContent = target.toLocaleString('de-DE'); return; }
+    var duration = 1100;
+    var start = null;
+    function step(ts) {
+      if (start === null) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(eased * target).toLocaleString('de-DE');
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = target.toLocaleString('de-DE');
+    }
+    requestAnimationFrame(step);
+  }
+
+  var revealTicking = false;
+  function checkReveal() {
+    revealTicking = false;
+    var vh = window.innerHeight;
+    var triggerLine = vh * 0.88;
+    revealEls = revealEls.filter(function (el) {
+      var rect = el.getBoundingClientRect();
+      if (rect.top < triggerLine && rect.bottom > 0) {
+        el.classList.add('visible');
+        return false;
+      }
+      return true;
+    });
+    countEls = countEls.filter(function (el) {
+      var rect = el.getBoundingClientRect();
+      if (rect.top < vh * 0.9 && rect.bottom > 0) {
+        runCount(el);
+        return false;
+      }
+      return true;
+    });
+  }
+  function onRevealScroll() {
+    if (!revealTicking) { revealTicking = true; requestAnimationFrame(checkReveal); }
+  }
+  window.addEventListener('scroll', onRevealScroll, { passive: true });
+  window.addEventListener('resize', onRevealScroll);
+  checkReveal();
+
+  // scroll-scrubbed word-by-word text color (not time-based: recalculated on every scroll tick)
+  var swTarget = document.querySelector('.sw-target');
+  if (swTarget && !reduceMotion) {
+    var words = swTarget.querySelectorAll('.sw');
+    var ticking = false;
+    function updateWords() {
+      ticking = false;
+      var rect = swTarget.getBoundingClientRect();
+      var startY = window.innerHeight * 0.82;
+      var endY = window.innerHeight * 0.4;
+      var progress = (startY - rect.top) / (startY - endY);
+      progress = Math.max(0, Math.min(1, progress));
+      var litCount = Math.round(progress * words.length);
+      words.forEach(function (w, i) {
+        if (i < litCount) w.classList.add('lit');
+        else w.classList.remove('lit');
+      });
+    }
+    function onScroll() {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(updateWords);
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    updateWords();
+  } else if (swTarget) {
+    swTarget.querySelectorAll('.sw').forEach(function (w) { w.classList.add('lit'); });
+  }
+})();
+</script>
+
+</body></html>
