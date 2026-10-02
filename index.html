@@ -1,4 +1,9 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
 <title>S.M.A.R.T. Instagram Mentoring</title>
 <meta name="description" content="Kostenloser Kennenlern-Call: Wir schauen gemeinsam, ob das S.M.A.R.T. Instagram Mentoring zu deiner aktuellen Situation passt." />
 <meta property="og:title" content="S.M.A.R.T. Instagram Mentoring" />
@@ -416,6 +421,8 @@
     .final-bg .pill { animation: none; }
   }
 </style>
+</head>
+<body>
 
 <nav>
   <div class="logo">business.einfach<em>.smart</em></div>
@@ -698,6 +705,13 @@
   document.querySelectorAll('[data-cta="call"]').forEach(function (btn) {
     btn.addEventListener('click', function (e) {
       e.preventDefault();
+      // Auf dem Handy die Google-Buchungsseite direkt oeffnen,
+      // das eingebettete Fenster bleibt dort teils leer
+      if (window.matchMedia && window.matchMedia('(max-width: 879px)').matches) {
+        var w = window.open(BOOKING_URL, '_blank');
+        if (w) { w.opener = null; } else { window.location.href = BOOKING_URL; }
+        return;
+      }
       openModal();
     });
   });
