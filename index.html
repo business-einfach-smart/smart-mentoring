@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 <style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
 <title>S.M.A.R.T. Instagram Mentoring</title>
-<meta name="description" content="Kostenloser Kennenlern-Call: Wir schauen gemeinsam, ob das S.M.A.R.T. Instagram Mentoring zu deiner aktuellen Situation passt." />
+<meta name="description" content="Ich zeige dir meine S.M.A.R.T. Methode für strategisches Instagram-Wachstum. Buche einen kostenlosen 30-Minuten-Kennenlern-Call." />
 <meta property="og:title" content="S.M.A.R.T. Instagram Mentoring" />
 <meta property="og:image" content="https://smart-mentoring-eosin.vercel.app/images/hanna.jpg" />
-<meta property="og:description" content="Positionierung, Content und Strategie für deinen Instagram-Account. Buche einen kostenlosen Kennenlern-Call." />
+<meta property="og:description" content="Meine Methode für strategisches Instagram-Wachstum. Der nächste Schritt: ein kostenloser 30-Minuten-Kennenlern-Call." />
 <link rel="stylesheet" href="fonts/fonts.css" />
 <style>
   *, *::before, *::after { box-sizing: border-box; }
@@ -69,8 +69,8 @@
   .eyebrow.on-dark { color: var(--salbei); }
   .eyebrow.on-dark::before { background: var(--salbei); }
 
-  h2.title { font-size: clamp(30px, 4vw, 46px); line-height: 1.18; margin-bottom: 22px; max-width: 760px; }
-  .lede { font-size: 17px; color: var(--ink-soft); max-width: 600px; }
+  h2.title { font-size: clamp(30px, 4vw, 46px); line-height: 1.18; margin-bottom: 22px; max-width: 820px; }
+  .lede { font-size: 17px; color: var(--ink-soft); max-width: 620px; }
   .fineprint { font-size: 13px; color: var(--muted); max-width: 520px; line-height: 1.6; }
 
   .pill {
@@ -97,7 +97,7 @@
   /* NAV */
   nav {
     display: flex; align-items: center; justify-content: space-between;
-    padding: 24px 24px 0;
+    padding: 24px 24px 0; gap: 16px;
   }
   @media (min-width: 900px) { nav { padding: 28px 64px 0; } }
   .logo { font-family: var(--serif); font-size: 19px; font-weight: 600; color: var(--ink); }
@@ -106,7 +106,7 @@
     font-family: var(--sans); font-size: 11px; font-weight: 600;
     letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft);
     text-decoration: none; border: none; background: none; cursor: pointer;
-    border-bottom: 1px solid var(--muted); padding-bottom: 3px;
+    border-bottom: 1px solid var(--muted); padding-bottom: 3px; text-align: right;
     transition: color 0.25s ease, border-color 0.25s ease;
   }
   .toplink:hover { color: var(--rost); border-color: var(--rost); }
@@ -126,7 +126,7 @@
     body { padding-bottom: 0; }
   }
 
-  /* HERO — text + photo */
+  /* HERO */
   .hero {
     display: grid;
     grid-template-columns: 1fr;
@@ -134,18 +134,19 @@
   @media (min-width: 880px) { .hero { grid-template-columns: 1.3fr 1fr; align-items: center; } }
   .hero-text {
     display: flex; flex-direction: column; justify-content: center;
-    padding: 56px 24px 36px;
+    padding: 48px 24px 32px;
   }
-  @media (min-width: 900px) { .hero-text { padding: 80px 64px; } }
-  .hero-text h1 { font-size: clamp(40px, 5.6vw, 62px); line-height: 1.06; margin-bottom: 22px; }
-  .hero-tagline { font-family: var(--serif); font-style: italic; font-size: clamp(19px, 2vw, 23px); color: var(--terrakotta); margin-bottom: 22px; line-height: 1.4; }
-  .hero-text p.hero-desc { font-size: 16px; color: var(--ink-soft); max-width: 480px; margin-bottom: 16px; }
-  .hero-text p.hero-sub { font-size: 15px; color: var(--muted); max-width: 460px; margin-bottom: 30px; }
-  .hero-meta {
-    margin-top: 26px; font-size: 12.5px; letter-spacing: 0.02em; color: var(--muted);
-    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+  @media (min-width: 900px) { .hero-text { padding: 72px 64px; } }
+  .hero-text h1 { font-size: clamp(32px, 4.4vw, 50px); line-height: 1.12; margin-bottom: 24px; max-width: 620px; }
+  .hero-text p.hero-desc { font-size: 16px; color: var(--ink-soft); max-width: 520px; margin-bottom: 16px; }
+  .hero-text .pill { align-self: flex-start; margin-top: 8px; }
+  .hero-note {
+    margin-top: 28px; max-width: 520px;
+    border-left: 2px solid var(--olive);
+    padding: 2px 0 2px 20px;
   }
-  .hero-meta .dot { color: var(--sandbeige); }
+  .hero-note strong { display: block; font-family: var(--serif); font-style: italic; font-size: 18px; color: var(--ink); font-weight: 500; margin-bottom: 4px; }
+  .hero-note span { font-size: 14.5px; color: var(--ink-soft); }
   .hero-photo { display: flex; align-items: center; justify-content: center; padding: 8px 24px 48px; }
   @media (min-width: 880px) { .hero-photo { padding: 40px 48px; } }
   .hero-photo-frame {
@@ -155,49 +156,44 @@
     animation: curtain 1.6s cubic-bezier(0.2,0.75,0.2,1) 0.1s both;
   }
   .hero-photo-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
-  .hero-photo-frame img.plx { transform: scale(1.14); will-change: transform; }
   @keyframes curtain { from { clip-path: inset(0 0 0 100%); } to { clip-path: inset(0 0 0 0); } }
 
-  /* PROBLEM SECTION */
-  .quote-stack { margin: 44px 0 40px; }
-  .quote-line {
-    font-family: var(--serif); font-style: italic; color: var(--ink);
-    font-size: clamp(20px, 2.6vw, 27px); text-align: center;
-    max-width: 680px; margin: 0 auto; padding: 20px 0;
-    border-top: 1px solid var(--line);
-    transition: color 0.3s ease;
-  }
-  .quote-stack .quote-line:last-child { border-bottom: 1px solid var(--line); }
-  @media (hover: hover) { .quote-line:hover { color: var(--rost); } }
-  .problem-close { max-width: 680px; text-align: center; margin: 0 auto; font-size: 17px; line-height: 1.8; }
-  .sw { color: var(--sandbeige); transition: color 0.15s ease; }
-  .sw.lit { color: var(--ink); }
-
-  /* GRUNDIDEE — the one deliberate dark contrast section */
-  .grundidee-bg { background: var(--ink); }
-  .grundidee-grid { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; }
-  @media (min-width: 900px) { .grundidee-grid { grid-template-columns: 1fr 0.85fr; gap: 64px; } }
-  .grundidee-inner { max-width: 620px; }
-  @media (min-width: 900px) { .grundidee-inner { max-width: none; } }
-  .grundidee-inner h2 { color: var(--offwhite); margin-bottom: 28px; }
-  .grundidee-inner p { color: #EADFD4; font-size: 16.5px; margin-bottom: 18px; }
-  .grundidee-pull {
-    font-family: var(--serif); font-style: italic; font-size: clamp(22px,2.8vw,30px);
-    color: var(--salbei); margin-top: 34px; transition: color 0.35s ease; cursor: default;
-  }
-  @media (hover: hover) { .grundidee-pull:hover { color: #E8894E; } }
-  .grundidee-photo { display: flex; align-items: center; justify-content: center; }
-  .grundidee-photo-frame {
-    width: 100%; max-width: 380px; aspect-ratio: 4 / 5;
+  /* METHOD INTRO */
+  .method-intro-grid { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; }
+  @media (min-width: 900px) { .method-intro-grid { grid-template-columns: 1.1fr 0.9fr; gap: 64px; } }
+  .method-intro p { font-size: 16.5px; color: var(--ink-soft); max-width: 560px; }
+  .method-photo-frame {
+    width: 100%; max-width: 420px; aspect-ratio: 4 / 5; margin: 0 auto;
     border-radius: 10px; overflow: hidden;
-    box-shadow: 0 30px 50px -24px rgba(0,0,0,0.55);
+    box-shadow: 0 24px 44px -26px rgba(36,33,31,0.4);
   }
-  .grundidee-photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+  .method-photo-frame img { width: 100%; height: 100%; object-fit: cover; }
 
-  /* METHOD / FLOWER */
-  .method-grid { display: grid; grid-template-columns: 1fr; gap: 52px; align-items: center; }
-  @media (min-width: 980px) { .method-grid { grid-template-columns: 1fr 1fr; } }
-  .flower-svg { width: 100%; height: auto; max-width: 460px; margin: 0 auto; display: block; overflow: visible; }
+  /* METHOD STEPS */
+  .steps { margin-top: 20px; }
+  .step {
+    display: grid; grid-template-columns: 1fr; gap: 10px 28px;
+    padding: 44px 0; border-top: 1px solid var(--line);
+  }
+  @media (min-width: 760px) { .step { grid-template-columns: 110px 1fr; gap: 0 40px; } }
+  .step-num { font-family: var(--serif); font-size: clamp(44px, 6vw, 64px); color: var(--sandbeige); line-height: 1; font-weight: 600; }
+  .step-label { font-size: 11.5px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--rost); margin-bottom: 10px; }
+  .step h3 { font-size: clamp(22px, 2.6vw, 28px); line-height: 1.22; margin-bottom: 16px; }
+  .step p { font-size: 16px; color: var(--ink-soft); max-width: 620px; margin: 0 0 18px; }
+  .step ul { list-style: none; margin: 0 0 20px; padding: 0; display: flex; flex-direction: column; gap: 9px; max-width: 560px; }
+  .step li { font-size: 15.5px; color: var(--ink-soft); padding-left: 20px; position: relative; }
+  .step li::before { content: ''; position: absolute; left: 0; top: 11px; width: 6px; height: 6px; border-radius: 50%; background: var(--olive); }
+  .step .ergebnis {
+    font-size: 15.5px; color: var(--ink); max-width: 620px;
+    border-left: 2px solid var(--rost); padding: 2px 0 2px 18px; margin: 0;
+  }
+  .step .ergebnis b { font-weight: 600; color: var(--rost); }
+
+  /* SMART FLOWER — supplementary */
+  .smart-supp { margin-top: 20px; }
+  .smart-supp-grid { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; }
+  @media (min-width: 900px) { .smart-supp-grid { grid-template-columns: 0.9fr 1.1fr; gap: 56px; } }
+  .flower-svg { width: 100%; height: auto; max-width: 380px; margin: 0 auto; display: block; overflow: visible; }
   .flower-svg .petal-move {
     transform-box: fill-box; transform-origin: center;
     transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
@@ -208,26 +204,15 @@
   @media (hover: hover) { .flower-svg .petal:hover { transform: scale(1.06); } }
   .flower-svg .petal-circle { transform-box: fill-box; transform-origin: center; transition: filter 0.35s ease; }
   @media (hover: hover) { .flower-svg .petal:hover .petal-circle { filter: brightness(1.1); } }
-  .smart-list { display: flex; flex-direction: column; }
-  .smart-row { display: grid; grid-template-columns: 34px 1fr; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--line); }
-  .smart-row:first-child { padding-top: 0; }
-  .smart-row:last-child { border-bottom: none; }
-  .smart-row .idx { font-family: var(--serif); font-size: 15px; color: var(--rost); font-weight: 600; }
-  .smart-row h4 { font-size: 18px; font-weight: 600; color: var(--ink); margin: 0 0 4px; font-family: var(--sans); }
-  .smart-row p { font-size: 15px; color: var(--muted); margin: 0; }
+  .smart-map { display: flex; flex-direction: column; gap: 22px; }
+  .smart-map-row { display: grid; grid-template-columns: 1fr; gap: 6px; align-items: baseline; }
+  @media (min-width: 520px) { .smart-map-row { grid-template-columns: 130px 1fr; gap: 16px; } }
+  .smart-map-row .phase { font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rost); white-space: nowrap; padding-top: 4px; }
+  .smart-map-row .terms { font-family: var(--serif); font-size: clamp(18px, 2.2vw, 22px); color: var(--ink); line-height: 1.4; }
+  .smart-map-row .terms span { color: var(--muted); font-size: 0.85em; }
 
-  /* RESULTS — five plain numbered lines */
-  .result-list { margin-top: 40px; max-width: 700px; }
-  .result-row {
-    display: grid; grid-template-columns: 40px 1fr; gap: 20px; align-items: baseline;
-    padding: 16px 0; border-bottom: 1px solid var(--line);
-  }
-  .result-row:last-child { border-bottom: none; }
-  .result-row .idx { font-family: var(--serif); font-size: 16px; color: var(--rost); font-weight: 600; }
-  .result-row p { font-size: 16.5px; color: var(--ink); margin: 0; }
-
-  /* PROCESS TIMELINE */
-  .timeline { position: relative; margin-top: 48px; }
+  /* TIMELINE */
+  .timeline { position: relative; margin-top: 48px; max-width: 760px; }
   .timeline-item { display: flex; gap: 22px; position: relative; padding-bottom: 44px; }
   .timeline-item:last-child { padding-bottom: 0; }
   .timeline-marker {
@@ -237,24 +222,27 @@
     font-family: var(--serif); font-weight: 600; font-size: 15px;
     position: relative; z-index: 1;
   }
-  .timeline-item.free .timeline-marker { background: var(--olive); }
+  .timeline-item.pre .timeline-marker { background: var(--olive); }
   .timeline-item:not(:last-child)::before {
     content: ''; position: absolute; left: 17px; top: 36px; bottom: -44px; width: 2px;
     background: var(--line);
   }
   .timeline-content { flex: 1; padding-top: 3px; }
   .timeline-content .tag { font-size: 11.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--olive); margin-bottom: 4px; display: block; }
-  .timeline-item.free .timeline-content .tag { color: var(--rost); }
+  .timeline-item.pre .timeline-content .tag { color: var(--rost); }
   .timeline-content h4 { font-size: 19px; color: var(--ink); margin-bottom: 8px; font-weight: 600; font-family: var(--sans); }
   .timeline-content p.desc { font-size: 15.5px; color: var(--ink-soft); margin: 0; max-width: 600px; }
+  .timeline-content p.desc .soft { color: var(--muted); }
 
-  .bonus-line {
-    margin-top: 40px; max-width: 620px;
-    border-left: 2px solid var(--rost);
-    padding: 4px 0 4px 22px;
-  }
-  .bonus-line .bonus-label { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rost); display: block; margin-bottom: 6px; }
-  .bonus-line p { font-size: 14.5px; color: var(--ink-soft); margin: 0; }
+  /* RESULTS */
+  .result-bg { background: var(--ink); }
+  .result-bg h2 { color: var(--offwhite); }
+  .result-list { margin-top: 36px; max-width: 640px; list-style: none; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+  .result-list li { display: flex; gap: 14px; font-size: 16.5px; color: #E4DCD0; }
+  .result-list .arrow { color: var(--rost); flex: 0 0 auto; }
+  .result-note { margin-top: 36px; max-width: 640px; }
+  .result-note .small { font-size: 13.5px; color: var(--muted); margin-bottom: 14px; }
+  .result-note .pull { font-family: var(--serif); font-style: italic; font-size: clamp(19px,2.3vw,24px); color: var(--salbei); line-height: 1.5; }
 
   /* TESTIMONIAL */
   .testi-card {
@@ -281,11 +269,12 @@
   .testi-credit strong { color: var(--ink); font-weight: 600; }
   .testi-disclaimer { text-align: center; font-size: 12px; color: var(--muted); max-width: 480px; margin: 0 auto; line-height: 1.6; }
 
-  /* FINAL CTA — light, no second dark section */
+  /* FINAL CTA */
   .final-bg { background: var(--sandbeige); text-align: center; }
-  .final-inner { max-width: 600px; margin: 0 auto; }
-  .final-inner h2 { color: var(--ink); margin-bottom: 18px; }
-  .final-inner p.lead { color: var(--ink-soft); font-size: 16.5px; max-width: 500px; margin: 0 auto 28px; }
+  .final-inner { max-width: 640px; margin: 0 auto; }
+  .final-inner h2 { color: var(--ink); margin-bottom: 20px; }
+  .final-inner p.lead { color: var(--ink-soft); font-size: 16.5px; max-width: 560px; margin: 0 auto 16px; }
+  .final-inner p.add { color: var(--muted); font-size: 14.5px; max-width: 520px; margin: 0 auto 30px; }
   .final-inner .fineprint { color: var(--ink-soft); margin: 20px auto 0; text-align: center; }
 
   footer {
@@ -333,7 +322,7 @@
   .booking-fallback { padding: 40px 32px; text-align: center; }
   .booking-fallback p { color: var(--ink-soft); font-size: 15px; margin-bottom: 20px; line-height: 1.7; }
 
-  /* SCROLL REVEAL — sanftes Fade-in + leichte Bewegung, kein Dauerloop */
+  /* SCROLL REVEAL — sanftes Fade-in + leichte Bewegung */
   .reveal, .lede, .fineprint {
     transition: opacity 0.9s ease, transform 1s cubic-bezier(0.2,0.75,0.2,1);
   }
@@ -344,29 +333,22 @@
     opacity: 1; transform: none;
   }
 
-  /* card stagger: --d is computed per element by JS (sibling index * 0.09s) */
-  html.js-reveal .smart-row, html.js-reveal .timeline-item, html.js-reveal .result-row {
+  html.js-reveal .step, html.js-reveal .timeline-item, html.js-reveal .result-list li, html.js-reveal .smart-map-row {
     opacity: 0; transform: translateY(18px);
     transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2,0.75,0.2,1);
     transition-delay: var(--d, 0s);
   }
-  html.js-reveal #methode.visible .smart-row,
-  html.js-reveal #process.visible .timeline-item,
-  html.js-reveal #ergebnisse.visible .result-row {
+  html.js-reveal #methode.visible .step,
+  html.js-reveal #ablauf.visible .timeline-item,
+  html.js-reveal #ergebnis.visible .result-list li,
+  html.js-reveal #smart.visible .smart-map-row {
     opacity: 1; transform: none;
   }
 
-  html.js-reveal .quote-line {
-    opacity: 0; transform: translateX(-26px);
-    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2,0.75,0.2,1);
-    transition-delay: var(--d, 0s);
-  }
-  html.js-reveal #problem.visible .quote-line { opacity: 1; transform: none; }
-
-  .reveal-text, h2, .grundidee-pull, .testi-quote {
+  .reveal-text, h2, .testi-quote {
     transition: opacity 0.9s ease, transform 1s cubic-bezier(0.2,0.75,0.2,1);
   }
-  html.js-reveal .reveal-text, html.js-reveal h2, html.js-reveal .grundidee-pull, html.js-reveal .testi-quote {
+  html.js-reveal .reveal-text, html.js-reveal h2, html.js-reveal .testi-quote {
     opacity: 0; transform: translateX(-26px);
   }
   h2 { cursor: default; transition: color 0.35s ease; }
@@ -374,51 +356,31 @@
   .testi-quote { cursor: default; transition: opacity 0.9s ease, transform 1s cubic-bezier(0.2,0.75,0.2,1), color 0.35s ease; }
   @media (hover: hover) { .testi-quote:hover { color: var(--rost); } }
 
-  html.js-reveal .reveal-text.visible, html.js-reveal h2.visible, html.js-reveal .grundidee-pull.visible, html.js-reveal .testi-quote.visible {
+  html.js-reveal .reveal-text.visible, html.js-reveal h2.visible, html.js-reveal .testi-quote.visible {
     opacity: 1; transform: none;
-  }
-
-  @media (hover: hover) {
-    .smart-row:hover .idx { color: var(--terrakotta); }
-    .smart-row:hover h4 { color: var(--rost); }
-  }
-  .smart-row h4, .smart-row .idx { transition: color 0.25s ease; }
-
-  /* one quiet, bounded pulse on the final CTA only — not a permanent loop */
-  .final-bg .pill { animation: cta-pulse-once 1.8s ease-out 1; }
-  @keyframes cta-pulse-once {
-    0% { box-shadow: 0 0 0 0 rgba(165,77,45,0.35); }
-    100% { box-shadow: 0 0 0 14px rgba(165,77,45,0); }
   }
 
   .numbers .count { font-variant-numeric: tabular-nums; }
 
-  /* guaranteed entrance motion on load, no JS/scroll dependency */
+  /* guaranteed entrance motion on load */
   @keyframes fade-up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
   .hero-text > * { opacity: 0; animation: fade-up 0.8s cubic-bezier(0.16,1,0.3,1) forwards; }
-  .hero-text .eyebrow  { animation-delay: 0.05s; }
-  .hero-text h1         { animation-delay: 0s; opacity: 1; animation: none; }
-  .hero-text h1 .word {
-    display: inline-block; opacity: 0;
-    animation: fade-up 0.6s cubic-bezier(0.16,1,0.3,1) forwards;
-    animation-delay: calc(0.15s + var(--i) * 0.12s);
-  }
-  .hero-tagline          { animation-delay: 0.6s; }
-  .hero-text p.hero-desc { animation-delay: 0.7s; }
-  .hero-text p.hero-sub  { animation-delay: 0.78s; }
-  .hero-text .pill       { animation-delay: 0.88s; }
-  .hero-meta             { animation-delay: 0.98s; }
+  .hero-text .eyebrow   { animation-delay: 0.05s; }
+  .hero-text h1         { animation-delay: 0.14s; }
+  .hero-text p.hero-desc { animation-delay: 0.5s; }
+  .hero-text .pill      { animation-delay: 0.72s; }
+  .hero-note            { animation-delay: 0.84s; }
 
-  /* reduced motion: keep content visible, drop the animation itself */
+  /* reduced motion: keep content visible, drop the animation */
   @media (prefers-reduced-motion: reduce) {
     html.js-reveal .reveal, html.js-reveal .lede, html.js-reveal .fineprint,
-    html.js-reveal .smart-row, html.js-reveal .timeline-item, html.js-reveal .result-row,
-    html.js-reveal .quote-line, html.js-reveal .reveal-text, html.js-reveal h2,
-    html.js-reveal .grundidee-pull, html.js-reveal .testi-quote,
-    html.js-reveal .flower-svg .petal-move, .hero-text > *, .hero-text h1 .word {
+    html.js-reveal .step, html.js-reveal .timeline-item, html.js-reveal .result-list li,
+    html.js-reveal .smart-map-row, html.js-reveal .reveal-text, html.js-reveal h2,
+    html.js-reveal .testi-quote, html.js-reveal .flower-svg .petal-move,
+    .hero-text > * {
       transition: none !important; animation: none !important; opacity: 1 !important; transform: none !important;
     }
-    .final-bg .pill { animation: none; }
+    .hero-photo-frame { animation: none; }
   }
 </style>
 </head>
@@ -431,63 +393,90 @@
 
 <div class="hero">
   <div class="hero-text">
-    <p class="eyebrow">1:1 Instagram Mentoring</p>
-    <h1><span class="word" style="--i:0">S.M.A.R.T.</span><br /><span class="word" style="--i:1">Instagram</span> <span class="word" style="--i:2"><em>Mentoring</em></span></h1>
-    <p class="hero-tagline">Deine Strategie. Dein Content. Zwei Wochen gemeinsam umgesetzt.</p>
-    <p class="hero-desc">Du hast Wissen, Erfahrung oder bereits ein Angebot, aber auf Instagram fehlt dir die klare Richtung? Im S.M.A.R.T. Mentoring schauen wir gemeinsam auf deine Positionierung, deinen Account und deinen Content und entwickeln daraus eine Strategie, die zu dir und deinem Business passt.</p>
-    <p class="hero-sub">Im kostenlosen Kennenlern-Call schauen wir zuerst, wo du gerade stehst und ob die 14 Tage für dich sinnvoll sind.</p>
+    <p class="eyebrow">Kostenloser Kennenlern-Call · 30 Minuten</p>
+    <h1>Ich zeige dir, wie ich kleine Instagram-Accounts <em>strategisch</em> wachsen lasse.</h1>
+    <p class="hero-desc">Du hast bereits Wissen, Erfahrung oder ein Angebot, aber dein Instagram-Account kommt nicht richtig voran?</p>
+    <p class="hero-desc">Hier zeige ich dir meine S.M.A.R.T. Methode und wie ich sie im 14-Tage-1:1-Mentoring auf einen Account anwende. Wenn du danach das Gefühl hast, dass genau diese Unterstützung dir fehlt, kannst du dir einen kostenlosen 30-Minuten-Kennenlern-Call mit mir buchen.</p>
     <button class="pill" data-cta="call">Kennenlern-Call buchen</button>
-    <div class="hero-meta">
-      <span>Account- &amp; Insights-Analyse</span>
-      <span class="dot">·</span>
-      <span>Persönlicher Strategie-Call</span>
-      <span class="dot">·</span>
-      <span>14 Tage 1:1 Begleitung</span>
+    <div class="hero-note">
+      <strong>Du buchst hier noch kein Mentoring.</strong>
+      <span>Wir lernen uns zuerst 30 Minuten kennen und schauen, ob die 14 Tage für dich sinnvoll sind.</span>
     </div>
   </div>
   <div class="hero-photo">
     <div class="hero-photo-frame">
-      <img class="plx" src="images/hanna.jpg" alt="Hanna, business.einfach.smart" />
-    </div>
-  </div>
-</div>
-
-<section class="wrap reveal" id="problem">
-  <p class="eyebrow">Vielleicht kommt dir das bekannt vor</p>
-  <h2 class="title">Du postest.<br /><em>Aber irgendwie fehlt die Richtung.</em></h2>
-  <div class="quote-stack">
-    <p class="quote-line">„Ich poste, aber es tut sich einfach nichts.“</p>
-    <p class="quote-line">„Ich weiß nicht genau, wofür mein Account stehen soll.“</p>
-    <p class="quote-line">„Meine Bio und mein Content passen irgendwie nicht zusammen.“</p>
-    <p class="quote-line">„Ich weiß nicht, welche Themen und Formate ich wirklich weiterverfolgen soll.“</p>
-  </div>
-  <p class="problem-close sw-target"><span class="sw">Du</span> <span class="sw">brauchst</span> <span class="sw">nicht</span> <span class="sw">noch</span> <span class="sw">mehr</span> <span class="sw">einzelne</span> <span class="sw">Instagram-Tipps.</span> <span class="sw">Du</span> <span class="sw">brauchst</span> <span class="sw">Klarheit</span> <span class="sw">darüber,</span> <span class="sw">was</span> <span class="sw">für</span> <span class="sw">deinen</span> <span class="sw">Account</span> <span class="sw">zusammengehört.</span></p>
-</section>
-
-<div class="full grundidee-bg reveal">
-  <div class="inner">
-    <div class="grundidee-grid">
-      <div class="grundidee-inner">
-        <p class="eyebrow on-dark">Meine Haltung</p>
-        <h2>Du brauchst nicht einfach mehr Content.</h2>
-        <p class="reveal">Ein Reel kann Reichweite bekommen und dir trotzdem kaum passende Follower bringen. Eine gute Bio hilft dir wiederum wenig, wenn dein Content niemanden interessiert.</p>
-        <p class="reveal">Deshalb schauen wir im S.M.A.R.T. Mentoring auf das Zusammenspiel: Positionierung. Profil. Themen. Content.</p>
-        <p class="grundidee-pull">Nicht einfach mehr posten. Herausfinden, was für deinen Account wirklich funktioniert.</p>
-      </div>
-      <div class="grundidee-photo reveal">
-        <div class="grundidee-photo-frame">
-          <img src="images/hanna-analyse.jpg" alt="Genau hinschauen: Positionierung und Content im Detail analysieren" loading="lazy" />
-        </div>
-      </div>
+      <img src="images/hanna.jpg" alt="Hanna, business.einfach.smart" />
     </div>
   </div>
 </div>
 
 <section class="wrap reveal" id="methode">
-  <p class="eyebrow">Die S.M.A.R.T. Methode</p>
-  <h2 class="title">Fünf Bereiche. Eine Strategie für deinen Account.</h2>
-  <div class="method-grid">
-    <svg class="flower-svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+  <div class="method-intro-grid">
+    <div class="method-intro">
+      <p class="eyebrow">Meine S.M.A.R.T. Methode</p>
+      <h2 class="title">Erst verstehen. Dann verändern. Dann umsetzen.</h2>
+      <p>Keine fertige Content-Schablone und keine Strategie, die für jeden Account gleich aussieht.</p>
+      <p>Wir schauen zuerst genau hin und bauen darauf deinen Weg für die nächsten 14 Tage auf.</p>
+    </div>
+    <div class="reveal">
+      <div class="method-photo-frame">
+        <img src="images/hanna-analyse.jpg" alt="Genau hinschauen: Account und Insights im Detail analysieren" loading="lazy" />
+      </div>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div>
+        <p class="step-label">Analyse</p>
+        <h3>Wir finden deinen größten Engpass.</h3>
+        <p>Ich analysiere deinen Account und deine Insights. Wir schauen unter anderem auf:</p>
+        <ul>
+          <li>Positionierung</li>
+          <li>Profil und Bio</li>
+          <li>Themen und Content</li>
+          <li>Formate</li>
+          <li>Reichweite und Insights</li>
+          <li>Verhältnis von Views, Followern und Interaktionen</li>
+        </ul>
+        <p class="ergebnis"><b>Ergebnis:</b> Wir erkennen, was bereits funktioniert und wo dein Account gerade Potenzial liegen lässt.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">02</div>
+      <div>
+        <p class="step-label">Strategie</p>
+        <h3>Wir entscheiden, was du konkret verändern solltest.</h3>
+        <p>Aus der Analyse entsteht deine persönliche Strategie. Wir klären:</p>
+        <ul>
+          <li>Wofür soll dein Account stehen?</li>
+          <li>Wen willst du erreichen?</li>
+          <li>Welche Themen passen zu deiner Positionierung?</li>
+          <li>Welche Formate solltest du testen?</li>
+          <li>Wie kann KI dich dabei als Sparringpartner unterstützen?</li>
+        </ul>
+        <p class="ergebnis"><b>Ergebnis:</b> Du hast eine klare Richtung und weißt, worauf du dich konzentrieren sollst.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">03</div>
+      <div>
+        <p class="step-label">Umsetzung</p>
+        <h3>Dann testen wir die Strategie 14 Tage gemeinsam.</h3>
+        <p>Jetzt geht es nicht mehr um Theorie. Du setzt um, veröffentlichst Content und bekommst von mir persönliches Feedback.</p>
+        <p>Während der 14 Tage kannst du mir Fragen stellen, Inhalte zeigen und gemeinsam mit mir prüfen, was funktioniert und was wir anpassen sollten.</p>
+        <p class="ergebnis"><b>Ergebnis:</b> Du setzt die Strategie direkt auf deinem eigenen Account ein.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap reveal smart-supp" id="smart">
+  <div class="smart-supp-grid">
+    <svg class="flower-svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" aria-label="S.M.A.R.T. Methode">
       <circle cx="240" cy="240" r="205" fill="none" stroke="#A54D2D" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="1 9" stroke-linecap="round" />
       <g class="petal-move" style="--tx:0px; --ty:-150px;">
         <g class="petal">
@@ -524,76 +513,84 @@
         <text x="240" y="234" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="17" fill="#FAF8F4">DU</text>
         <text x="240" y="253" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-size="14" fill="#D6D9C8">sichtbar</text>
       </g>
-      <text x="240" y="30" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="12.5" letter-spacing="0.06em" fill="#5A5648">STANDORTANALYSE</text>
-      <text x="470" y="175" text-anchor="end" font-family="Montserrat, sans-serif" font-size="12.5" letter-spacing="0.06em" fill="#5A5648">MARKENPOSITIONIERUNG</text>
-      <text x="400" y="400" text-anchor="end" font-family="Montserrat, sans-serif" font-size="12.5" letter-spacing="0.06em" fill="#5A5648">AUSRICHTUNG</text>
-      <text x="80" y="400" text-anchor="start" font-family="Montserrat, sans-serif" font-size="12.5" letter-spacing="0.06em" fill="#5A5648">REICHWEITEN-SETUP</text>
-      <text x="10" y="175" text-anchor="start" font-family="Montserrat, sans-serif" font-size="12.5" letter-spacing="0.06em" fill="#5A5648">TRANSFER</text>
     </svg>
-    <div class="smart-list">
-      <div class="smart-row"><span class="idx">01</span><div><h4>Standortanalyse</h4><p>Wo stehst du gerade? Wir schauen uns deinen Account und deine Insights genau an.</p></div></div>
-      <div class="smart-row"><span class="idx">02</span><div><h4>Markenpositionierung</h4><p>Wir arbeiten heraus, wofür du mit deinem Account stehen willst und für welches Problem du bekannt werden möchtest.</p></div></div>
-      <div class="smart-row"><span class="idx">03</span><div><h4>Ausrichtung</h4><p>Wir sortieren deine Themen und Content-Säulen, damit du nicht mehr wahllos postest.</p></div></div>
-      <div class="smart-row"><span class="idx">04</span><div><h4>Reichweiten-Setup</h4><p>Wir analysieren, welche Themen und Formate bei dir Potenzial haben und was du gezielt testen solltest.</p></div></div>
-      <div class="smart-row"><span class="idx">05</span><div><h4>Transfer</h4><p>Raus aus der Theorie. Du setzt die Strategie 14 Tage lang mit persönlichem Feedback um.</p></div></div>
+    <div>
+      <p class="eyebrow">Wofür S.M.A.R.T. steht</p>
+      <h2 class="title" style="font-size:clamp(26px,3vw,36px);">Die fünf Bausteine, verteilt auf die drei Schritte.</h2>
+      <div class="smart-map">
+        <div class="smart-map-row">
+          <span class="phase">Analyse</span>
+          <p class="terms">Standortanalyse <span>(S)</span></p>
+        </div>
+        <div class="smart-map-row">
+          <span class="phase">Strategie</span>
+          <p class="terms">Markenpositionierung <span>(M)</span> · Ausrichtung <span>(A)</span> · Reichweiten-Setup <span>(R)</span></p>
+        </div>
+        <div class="smart-map-row">
+          <span class="phase">Umsetzung</span>
+          <p class="terms">Transfer <span>(T)</span></p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="wrap reveal" id="ergebnisse">
-  <h2 class="title center mx-auto">Was du nach den 14 Tagen mitnimmst</h2>
-  <p class="lede center mx-auto">Keine Reichweiten- oder Follower-Garantie. Dafür eine klare Grundlage, mit der du weiterarbeiten kannst.</p>
-  <div class="result-list mx-auto">
-    <div class="result-row"><span class="idx">01</span><p>Eine klare Positionierung</p></div>
-    <div class="result-row"><span class="idx">02</span><p>Eine Bio, die verständlich macht, wofür dein Account steht</p></div>
-    <div class="result-row"><span class="idx">03</span><p>Klare Themen und Content-Säulen</p></div>
-    <div class="result-row"><span class="idx">04</span><p>Formate und Content-Ideen, die du gezielt testen kannst</p></div>
-    <div class="result-row"><span class="idx">05</span><p>Einen konkreten Plan für deine nächsten Schritte</p></div>
-  </div>
-</section>
-
-<section class="wrap reveal" id="process">
-  <p class="eyebrow">So geht's los</p>
-  <h2 class="title">So läuft die Zusammenarbeit ab</h2>
+<section class="wrap reveal" id="ablauf">
+  <p class="eyebrow">So laufen die 14 Tage ab</p>
+  <h2 class="title">Was passiert, wenn wir uns nach dem Kennenlern-Call für die 14 Tage entscheiden?</h2>
   <div class="timeline">
-    <div class="timeline-item free">
+    <div class="timeline-item pre">
       <div class="timeline-marker">1</div>
       <div class="timeline-content">
-        <span class="tag">30 Min. · kostenlos</span>
+        <span class="tag">Vor dem Mentoring · 30 Minuten</span>
         <h4>Kennenlern-Call</h4>
-        <p class="desc">Wir sprechen darüber, wo du gerade mit deinem Account stehst, was aktuell nicht funktioniert und was du verändern möchtest. Danach schauen wir, ob das S.M.A.R.T. Mentoring für deine Situation sinnvoll ist.</p>
+        <p class="desc">Wir lernen uns kennen und schauen, ob die Zusammenarbeit für dich passt. <span class="soft">Noch keine Buchung. Noch kein Mentoring.</span></p>
       </div>
     </div>
     <div class="timeline-item">
       <div class="timeline-marker">2</div>
       <div class="timeline-content">
-        <span class="tag">Danach</span>
+        <span class="tag">Start der 14 Tage</span>
         <h4>Account- und Insights-Analyse</h4>
-        <p class="desc">Wenn wir uns für die Zusammenarbeit entscheiden, analysiere ich deinen Account und deine Insights ausführlich.</p>
+        <p class="desc">Ich bereite deinen Account ausführlich vor und identifiziere deine wichtigsten Hebel.</p>
       </div>
     </div>
     <div class="timeline-item">
       <div class="timeline-marker">3</div>
       <div class="timeline-content">
-        <span class="tag">Danach</span>
-        <h4>Persönlicher Strategie-Call</h4>
-        <p class="desc">60 Minuten nur für dich und deinen Account. Wir gehen die Analyse gemeinsam durch und legen Positionierung, Bio, Themen, Formate und nächste Schritte fest.</p>
+        <span class="tag">Danach · 60 Minuten</span>
+        <h4>Strategie-Call</h4>
+        <p class="desc">Wir gehen die Analyse gemeinsam durch und legen deine nächsten Schritte fest.</p>
       </div>
     </div>
     <div class="timeline-item">
       <div class="timeline-marker">4</div>
       <div class="timeline-content">
-        <span class="tag">Danach</span>
-        <h4>14 Tage gemeinsame Umsetzung</h4>
-        <p class="desc">Du setzt die Strategie um, erstellst Content und kannst mir während dieser Zeit deine Fragen und Inhalte schicken. Du bekommst persönliches Feedback, statt allein überlegen zu müssen, ob du gerade in die richtige Richtung gehst.</p>
+        <span class="tag">Anschließend · 14 Tage</span>
+        <h4>Persönliche Begleitung</h4>
+        <p class="desc">Du setzt um und bekommst Feedback zu deinen Fragen und Inhalten. Zusätzlich kannst du während der 14 Tage an meinem wöchentlichen Business-Club-Call teilnehmen.</p>
       </div>
     </div>
   </div>
-  <div class="bonus-line reveal">
-    <span class="bonus-label">Bonus</span>
-    <p>Während deiner 14 Tage kannst du zusätzlich an meinem wöchentlichen Business-Club-Call teilnehmen.</p>
-  </div>
 </section>
+
+<div class="full result-bg reveal" id="ergebnis">
+  <div class="inner">
+    <h2 class="title">Nach 14 Tagen sollst du vor allem eines haben: <em>Klarheit</em>.</h2>
+    <ul class="result-list">
+      <li><span class="arrow">→</span><span>wofür dein Account stehen soll</span></li>
+      <li><span class="arrow">→</span><span>welche Themen du weiterverfolgst</span></li>
+      <li><span class="arrow">→</span><span>welche Formate du testen möchtest</span></li>
+      <li><span class="arrow">→</span><span>wie du deinen Content strategischer planst</span></li>
+      <li><span class="arrow">→</span><span>wie du KI sinnvoll als Sparringpartner nutzt</span></li>
+      <li><span class="arrow">→</span><span>was deine nächsten Schritte sind</span></li>
+    </ul>
+    <div class="result-note">
+      <p class="small">Keine Follower-Garantie. Keine Reichweiten-Garantie.</p>
+      <p class="pull">Aber eine klare Strategie, die du nicht nur kennst, sondern bereits umgesetzt hast.</p>
+    </div>
+  </div>
+</div>
 
 <section class="wrap reveal">
   <p class="eyebrow center mx-auto" style="justify-content:center;">Was sich verändern kann, wenn die Richtung stimmt</p>
@@ -616,10 +613,11 @@
 <div class="full final-bg reveal">
   <div class="inner">
     <div class="final-inner">
-      <h2>Lass uns schauen, wo es bei dir gerade hängt.</h2>
-      <p class="lead">Im kostenlosen Kennenlern-Call schauen wir uns an, wo du mit deinem Instagram-Account gerade stehst und ob das S.M.A.R.T. Mentoring die richtige Unterstützung für dich ist. Der Call ist kein kostenloser Strategie- oder Beratungscall. Er dient dazu, deine aktuelle Situation kennenzulernen und herauszufinden, ob eine Zusammenarbeit sinnvoll ist.</p>
-      <button class="pill" data-cta="call">Kennenlern-Call buchen</button>
-      <p class="fineprint">30 Minuten · kostenlos · online über Google Meet</p>
+      <h2>Möchtest du wissen, ob diese 14 Tage zu deinem Account passen?</h2>
+      <p class="lead">Dann starten wir nicht mit einer Buchung. Wir starten mit einem kostenlosen 30-Minuten-Kennenlern-Call. Wir sprechen darüber, wo du gerade stehst, was du verändern möchtest und ob mein S.M.A.R.T. Mentoring dafür die richtige Unterstützung ist.</p>
+      <p class="add">Der Kennenlern-Call ist kein kostenloser Strategie-Call. Er dient dazu, herauszufinden, ob wir zusammenarbeiten möchten.</p>
+      <button class="pill" data-cta="call">30 Minuten Kennenlern-Call buchen</button>
+      <p class="fineprint">Kostenlos · unverbindlich · über Google Meet</p>
     </div>
   </div>
 </div>
@@ -627,9 +625,9 @@
 <footer>
   <div class="footer-logo">business.einfach<em>.smart</em></div>
   <div class="footer-links">
+    <a href="https://instagram.com/business.einfach.smart" target="_blank" rel="noopener">Instagram</a>
     <a href="impressum.html">Impressum</a>
     <a href="datenschutz.html">Datenschutz</a>
-    <a href="https://instagram.com/business.einfach.smart" target="_blank" rel="noopener">Instagram</a>
   </div>
 </footer>
 
@@ -651,8 +649,7 @@
 (function () {
   /* ───────────────────────────────────────────────────────────────
      GOOGLE-KALENDER-BUCHUNG: zentral an EINER Stelle gepflegt.
-     Alle CTA-Buttons auf der Seite (Nav, Hero, Sticky, Final) nutzen
-     automatisch denselben Link, ohne weitere Codeänderung.
+     Alle CTA-Buttons auf der Seite nutzen automatisch denselben Link.
   ─────────────────────────────────────────────────────────────── */
   var BOOKING_URL = 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0bvtYnH5KmCmxEnsrkb9SdN5dsnBqBtigjDFh7UMZ-pvRm7boQ3JJ5u0uhzii9M0X2Y75tCtnF';
 
@@ -726,7 +723,7 @@
   document.documentElement.classList.add('js-reveal');
 
   /* card stagger: give each element in a sibling group a --d delay based on its index */
-  var groups = ['.smart-row', '.timeline-item', '.result-row', '.quote-line'];
+  var groups = ['.step', '.timeline-item', '.result-list li', '.smart-map-row'];
   groups.forEach(function (sel) {
     document.querySelectorAll(sel).forEach(function (el) {
       var sibs = Array.prototype.filter.call(el.parentElement.children, function (c) { return c.matches(sel); });
@@ -734,8 +731,8 @@
     });
   });
 
-  /* scroll-driven reveal: plain scroll + getBoundingClientRect (no IntersectionObserver) */
-  var revealSelector = '.reveal, .reveal-text, h2, .grundidee-pull, .testi-quote, .flower-svg, .lede, .fineprint';
+  /* scroll-driven reveal: plain scroll + getBoundingClientRect */
+  var revealSelector = '.reveal, .reveal-text, h2, .testi-quote, .flower-svg, .lede, .fineprint';
   var revealEls = Array.prototype.slice.call(document.querySelectorAll(revealSelector));
   var countEls = Array.prototype.slice.call(document.querySelectorAll('.count[data-target]'));
 
@@ -783,37 +780,6 @@
   window.addEventListener('scroll', onRevealScroll, { passive: true });
   window.addEventListener('resize', onRevealScroll);
   checkReveal();
-
-  // scroll-scrubbed word-by-word text color (not time-based: recalculated on every scroll tick)
-  var swTarget = document.querySelector('.sw-target');
-  if (swTarget && !reduceMotion) {
-    var words = swTarget.querySelectorAll('.sw');
-    var ticking = false;
-    function updateWords() {
-      ticking = false;
-      var rect = swTarget.getBoundingClientRect();
-      var startY = window.innerHeight * 0.82;
-      var endY = window.innerHeight * 0.4;
-      var progress = (startY - rect.top) / (startY - endY);
-      progress = Math.max(0, Math.min(1, progress));
-      var litCount = Math.round(progress * words.length);
-      words.forEach(function (w, i) {
-        if (i < litCount) w.classList.add('lit');
-        else w.classList.remove('lit');
-      });
-    }
-    function onScroll() {
-      if (!ticking) {
-        ticking = true;
-        requestAnimationFrame(updateWords);
-      }
-    }
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
-    updateWords();
-  } else if (swTarget) {
-    swTarget.querySelectorAll('.sw').forEach(function (w) { w.classList.add('lit'); });
-  }
 })();
 </script>
 
